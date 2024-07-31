@@ -3975,8 +3975,8 @@ KITEM:  Z = gold q:1
 KITEM:	S = gold q:2
 SUBST:  P = .:40 S:10 Z:40
 MAP
-  xxxxxxxxxxxxx
- xxxtttx{xtttxxx
+xxxxxxxxxxxxxxxxx
+xxxxtttx{xtttxxxx
 xx.............xx
 xt.............tx
 xt.............tx
@@ -3986,9 +3986,9 @@ xxx.....P.....xxx
 xt.............tx
 xt.............tx
 xx.............xx
- xx.....x.....xx
-  xxttx+x+xttxx
-   xxxx@x@xxxx
+xxx.....x.....xxx
+xxxxttx+x+xttxxxx
+xxxxxxx@x@xxxxxxx
 ENDMAP
 
 NAME:   jiaa95_arrival_wishing_well_chamber
