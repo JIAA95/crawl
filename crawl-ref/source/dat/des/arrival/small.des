@@ -3965,3 +3965,74 @@ c.E.c.F.c..+@
 ccccccccc++c
          @@
 ENDMAP
+
+##############################################################################
+
+NAME:	jiaa95_arrival_wishing_well_hall
+TAGS:   arrival no_monster_gen no_trap_gen
+ORIENT: float
+KITEM:  Z = gold q:1
+KITEM:	S = gold q:2
+SUBST:  P = .:40 S:10 Z:40
+MAP
+  xxxxxxxxxxxxx
+ xxxtttx{xtttxxx
+xx.............xx
+xt.............tx
+xt.............tx
+xxx.....P.....xxx
+@+.....PTP.....+@
+xxx.....P.....xxx
+xt.............tx
+xt.............tx
+xx.............xx
+ xx.....x.....xx
+  xxttx+x+xttxx
+   xxxx@x@xxxx
+ENDMAP
+
+NAME:   jiaa95_arrival_wishing_well_chamber
+TAGS:   arrival no_monster_gen no_item_gen no_trap_gen
+ORIENT: float
+KITEM:  o = gold q:1
+KITEM:  Z = gold q:2
+SHUFFLE:Gi
+MONS:   rat, jackal
+SUBST:  P = .:50 Z:40 o:40
+SUBST:  i = .:40 1:30 2:20 Z:10 G:10
+MAP
+xxxxxxx
+xGxxxGx
+x+x{x+x
+x.....x
+x..P..x
+x.PTP.x
+x..P..x
+xxx+xxx
+@.....@
+xxx@xxx
+ENDMAP
+
+NAME:	jiaa95_arrival_floral_crevice
+TAGS:	arrival no_monster_gen no_item_gen no_trap_gen
+ORIENT:	float
+MONS:	fungus, plant, bush
+:if crawl.one_chance_in(4) then
+	SUBST: t = 1.
+:else
+	SUBST: 1 = 23.
+:end
+MAP
+xxxxx@xxx
+x{xxxx.1x
+x.1ttx1.x
+x1.11xt.x
+x...tx.tx
+xt.....xx
+xx1x..txx
+xx1x.xtxx
+xx..txxxx
+@.xxxxxxx
+ENDMAP
+
+##############################################################################
